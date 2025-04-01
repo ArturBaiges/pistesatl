@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-title">PISTES</div>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="imatges/PISTES (2).png" alt="Logo Pistes" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="Informacio.html">Informació</a></li>
+                <li><a href="equipaments.html">Equipaments</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <h1>Localització de les pistes</h1>
+            <div id="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4310.5947261231495!2d1.1142598744885805!3d41.15380191045399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a150dfe8c29ae1%3A0x85f4ef3db76c537c!2sClub%20Nataci%C3%B3%20Reus%20Ploms!5e1!3m2!1ses!2ses!4v1741194770966!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </main>
+    </div>
+
+    <!-- Botó per pujar a dalt -->
+    <button onclick="scrollToTop()" class="back-to-top">&uarr;</button>
+    
+
+    <footer>
+        <p>&copy; 2025 Pistes - Totes les pistes d'atletisme del Camp de Tarragona</p>
+    </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
