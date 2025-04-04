@@ -6,24 +6,41 @@
     <title>Informació</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <div class="header-title">PISTES</div>
-        <div class="logo-container">
-            <a href="index.html">
-                <img src="imatges/PISTES (2).png" alt="Logo Pistes" class="logo-img">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inici</a></li>
-                <li><a href="Informacio.html">Informació</a></li>
-                <li><a href="equipaments.html">Equipaments</a></li>
-                <li><a href="mapa.html">Mapa</a></li>
-                <li><a href="contacte.html">Contacte</a></li>
-            </ul>
-        </nav>
-    </header>
+
+        <header>
+            <div class="header-title">PISTES</div>
+        
+            <!-- Menú hamburguesa -->
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        
+            <!-- Menú desplegable -->
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="index.html">Inici</a>
+                <a href="Informacio.html">Informació</a>
+                <a href="equipaments.html">Equipaments</a>
+                <a href="mapa.html">Mapa</a>
+                <a href="contacte.html">Contacte</a>
+            </div>
+        
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="imatges/PISTES (2).png" alt="Logo Pistes" class="logo-img">
+                </a>
+            </div>
+        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="Informacio.html">Informació</a></li>
+                    <li><a href="equipaments.html">Equipaments</a></li>
+                    <li><a href="mapa.html">Mapa</a></li>
+                    <li><a href="contacte.html">Contacte</a></li>
+                </ul>
+            </nav>
+        </header>
+        
     <div class="container">
         <main>
             <h1>Pistes d'Atletisme del Camp de Tarragona</h1>
@@ -97,6 +114,26 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById("dropdown-menu");
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+
+    window.addEventListener("click", function(e) {
+        const toggle = document.querySelector(".menu-toggle");
+        const menu = document.getElementById("dropdown-menu");
+
+        if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+            menu.style.display = "none";
+        }
+    });
+</script>
+
 </body>
 </html>
 

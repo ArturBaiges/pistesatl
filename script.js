@@ -1,3 +1,4 @@
+
 const equipamentsPistes = {
     "Pista d'atletisme": ["Tarragona", "Reus", "Cambrils", "Vendrell", "Valls"],
     "Superfície de tartà o sintètica": ["Tarragona", "Reus", "Cambrils", "Vendrell", "Valls"],
