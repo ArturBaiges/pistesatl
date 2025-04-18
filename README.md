@@ -30,7 +30,7 @@ Aquesta web també pretén:
 
 ---
 
-## 🗂️ Dades i continguts
+## 🗂️🤖 Dades i continguts
 
 Per a l’elaboració de la web, s’han utilitzat dades de diverses fonts:
 
