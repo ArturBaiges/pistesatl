@@ -5,43 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informació</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
 
-        <header>
-            <div class="header-title">PISTES</div>
-        
-            <!-- Menú hamburguesa -->
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        
-            <!-- Menú desplegable -->
-            <div class="dropdown-menu" id="dropdown-menu">
-                <a href="index.html">Inici</a>
-                <a href="Informacio.html">Informació</a>
-                <a href="equipaments.html">Equipaments</a>
-                <a href="mapa.html">Mapa</a>
-                <a href="contacte.html">Contacte</a>
-            </div>
-        
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="imatges/PISTES (2).png" alt="Logo Pistes" class="logo-img">
-                </a>
-            </div>
-        
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inici</a></li>
-                    <li><a href="Informacio.html">Informació</a></li>
-                    <li><a href="equipaments.html">Equipaments</a></li>
-                    <li><a href="mapa.html">Mapa</a></li>
-                    <li><a href="contacte.html">Contacte</a></li>
-                </ul>
-            </nav>
-        </header>
-        
+    <header>
+        <div class="header-title">PISTES</div>
+    
+        <!-- Menú hamburguesa -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    
+        <!-- Menú desplegable -->
+        <div class="dropdown-menu" id="dropdown-menu">
+            <a href="index.html">Inici</a>
+            <a href="Informacio.html">Informació</a>
+            <a href="equipaments.html">Equipaments</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="contacte.html">Contacte</a>
+        </div>
+    
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="imatges/PISTES (2).png" alt="Logo Pistes" class="logo-img">
+            </a>
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="Informacio.html">Informació</a></li>
+                <li><a href="equipaments.html">Equipaments</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <div class="container">
         <main>
             <h1>Pistes d'Atletisme del Camp de Tarragona</h1>
@@ -49,6 +48,7 @@
             <div class="pista">
                 <div class="text">
                     <h2>Pista d'Atletisme de Tarragona</h2>
+                    <p><strong>Ubicació:</strong> Av. Mediterrània, 12, Tarragona</p>
                     <p><strong>Horari:</strong><br>
                     Dilluns - Divendres: 08:00 - 22:00<br>
                     Dissabte: 09:00 - 20:00<br>
@@ -60,6 +60,7 @@
             <div class="pista">
                 <div class="text">
                     <h2>Pista d'Atletisme de Reus</h2>
+                    <p><strong>Ubicació:</strong> C/ del Vent, 45, Reus</p>
                     <p><strong>Horari:</strong><br>
                     Dilluns - Divendres: 07:30 - 21:30<br>
                     Dissabte: 08:00 - 19:00<br>
@@ -71,6 +72,7 @@
             <div class="pista">
                 <div class="text">
                     <h2>Pista d'Atletisme de Cambrils</h2>
+                    <p><strong>Ubicació:</strong> Passeig Marítim, s/n, Cambrils</p>
                     <p><strong>Horari:</strong><br>
                     Dilluns - Divendres: 08:00 - 22:00<br>
                     Dissabte: 08:30 - 20:30<br>
@@ -82,6 +84,7 @@
             <div class="pista">
                 <div class="text">
                     <h2>Pista d'Atletisme del Vendrell</h2>
+                    <p><strong>Ubicació:</strong> Carrer de l'Esport, 7, El Vendrell</p>
                     <p><strong>Horari:</strong><br>
                     Dilluns - Divendres: 07:00 - 21:00<br>
                     Dissabte: 08:00 - 18:00<br>
@@ -93,6 +96,7 @@
             <div class="pista">
                 <div class="text">
                     <h2>Pista d'Atletisme de Valls</h2>
+                    <p><strong>Ubicació:</strong> Ronda de la Coma, 20, Valls</p>
                     <p><strong>Horari:</strong><br>
                     Dilluns - Divendres: 08:00 - 21:00<br>
                     Dissabte: 09:00 - 19:00<br>
@@ -115,6 +119,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
+
     <script>
     function toggleMenu() {
         const menu = document.getElementById("dropdown-menu");
@@ -133,7 +138,7 @@
             menu.style.display = "none";
         }
     });
-</script>
+    </script>
 
 </body>
 </html>
