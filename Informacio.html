@@ -1,147 +1,146 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informació</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informació</title>
+
+  <!-- Bootstrap (integrat dins del fitxer) -->
+  <style>
+    @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
+  </style>
+
+  <!-- Efecte hover al menú -->
+  <style>
+    nav ul li a:hover {
+      text-decoration: underline;
+      color: #fff176 !important;
+      transition: all 0.3s ease;
+    }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="header-title">PISTES</div>
-    
-        <!-- Menú hamburguesa -->
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    
-        <!-- Menú desplegable -->
-        <div class="dropdown-menu" id="dropdown-menu">
-            <a href="index.html">Inici</a>
-            <a href="Informacio.html">Informació</a>
-            <a href="equipaments.html">Equipaments</a>
-            <a href="mapa.html">Mapa</a>
-            <a href="contacte.html">Contacte</a>
-        </div>
-    
-        <div class="logo-container">
-            <a href="index.html">
-                <img src="imatges/PISTES (2).png" alt="Logo Pistes" class="logo-img">
-            </a>
-        </div>
-    
-        <nav>
-            <ul>
-                <li><a href="index.html">Inici</a></li>
-                <li><a href="Informacio.html">Informació</a></li>
-                <li><a href="equipaments.html">Equipaments</a></li>
-                <li><a href="mapa.html">Mapa</a></li>
-                <li><a href="contacte.html">Contacte</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="container">
-        <main>
-            <h1>Pistes d'Atletisme del Camp de Tarragona</h1>
+  <header class="text-white p-3 position-relative text-center" style="background: linear-gradient(to right, #FFB700, #b22222);">
+    <div class="header-title fs-3 fw-bold">PISTES</div>
 
-            <div class="pista">
-                <div class="text">
-                    <h2>Pista d'Atletisme de Tarragona</h2>
-                    <p><strong>Ubicació:</strong> Av. Mediterrània, 12, Tarragona</p>
-                    <p><strong>Horari:</strong><br>
-                    Dilluns - Divendres: 08:00 - 22:00<br>
-                    Dissabte: 09:00 - 20:00<br>
-                    Diumenge: 09:00 - 14:00</p>
-                </div>
-                <img src="imatges/tarragona.jpg" alt="Pista Tarragona">
-            </div>
+    <!-- Menú hamburguesa -->
+    <div class="menu-toggle position-absolute" style="left: 20px; top: 15px; font-size: 28px; cursor: pointer;" onclick="toggleMenu()">☰</div>
 
-            <div class="pista">
-                <div class="text">
-                    <h2>Pista d'Atletisme de Reus</h2>
-                    <p><strong>Ubicació:</strong> C/ del Vent, 45, Reus</p>
-                    <p><strong>Horari:</strong><br>
-                    Dilluns - Divendres: 07:30 - 21:30<br>
-                    Dissabte: 08:00 - 19:00<br>
-                    Diumenge: Tancat</p>
-                </div>
-                <img src="imatges/reus.jpg" alt="Pista Reus">
-            </div>
-
-            <div class="pista">
-                <div class="text">
-                    <h2>Pista d'Atletisme de Cambrils</h2>
-                    <p><strong>Ubicació:</strong> Passeig Marítim, s/n, Cambrils</p>
-                    <p><strong>Horari:</strong><br>
-                    Dilluns - Divendres: 08:00 - 22:00<br>
-                    Dissabte: 08:30 - 20:30<br>
-                    Diumenge: 09:00 - 14:00</p>
-                </div>
-                <img src="imatges/cambrils.jpg" alt="Pista Cambrils">
-            </div>
-
-            <div class="pista">
-                <div class="text">
-                    <h2>Pista d'Atletisme del Vendrell</h2>
-                    <p><strong>Ubicació:</strong> Carrer de l'Esport, 7, El Vendrell</p>
-                    <p><strong>Horari:</strong><br>
-                    Dilluns - Divendres: 07:00 - 21:00<br>
-                    Dissabte: 08:00 - 18:00<br>
-                    Diumenge: 08:00 - 13:00</p>
-                </div>
-                <img src="imatges/vendrell.jpg" alt="Pista Vendrell">
-            </div>
-
-            <div class="pista">
-                <div class="text">
-                    <h2>Pista d'Atletisme de Valls</h2>
-                    <p><strong>Ubicació:</strong> Ronda de la Coma, 20, Valls</p>
-                    <p><strong>Horari:</strong><br>
-                    Dilluns - Divendres: 08:00 - 21:00<br>
-                    Dissabte: 09:00 - 19:00<br>
-                    Diumenge: 09:00 - 14:00</p>
-                </div>
-                <img src="imatges/valls.jpg" alt="Pista Valls">
-            </div>
-        </main>
+    <!-- Menú desplegable -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Inici</a>
+      <a href="Informacio.html">Informació</a>
+      <a href="equipaments.html">Equipaments</a>
+      <a href="mapa.html">Mapa</a>
+      <a href="contacte.html">Contacte</a>
     </div>
 
-    <!-- Botó per pujar a dalt -->
-    <button onclick="scrollToTop()" class="back-to-top">&uarr;</button>
+    <div class="logo-container position-absolute" style="top: 10px; right: 20px;">
+      <a href="index.html">
+        <img src="imatges/PISTES (2).png" alt="Logo Pistes" class="logo-img" style="width: 60px; height: auto;">
+      </a>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Pistes - Totes les pistes d'atletisme del Camp de Tarragona</p>
-    </footer>
+    <nav class="mt-3">
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item mx-2"><a href="index.html" class="text-warning fw-bold text-decoration-none">Inici</a></li>
+        <li class="list-inline-item mx-2"><a href="Informacio.html" class="text-warning fw-bold text-decoration-none">Informació</a></li>
+        <li class="list-inline-item mx-2"><a href="equipaments.html" class="text-warning fw-bold text-decoration-none">Equipaments</a></li>
+        <li class="list-inline-item mx-2"><a href="mapa.html" class="text-warning fw-bold text-decoration-none">Mapa</a></li>
+        <li class="list-inline-item mx-2"><a href="contacte.html" class="text-warning fw-bold text-decoration-none">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <script>
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
+  <div class="container mt-4 p-4 rounded shadow" style="background: linear-gradient(to bottom, #fff9c4, #ffffff);">
+    <main>
+      <h1 class="mb-4 text-center">Pistes d'Atletisme del Camp de Tarragona</h1>
 
-    <script>
+      <div class="pista d-flex align-items-center mb-4">
+        <div class="text me-3">
+          <h2>Pista d'Atletisme de Tarragona</h2>
+          <p><strong>Ubicació:</strong> Av. Mediterrània, 12, Tarragona</p>
+          <p><strong>Horari:</strong><br>Dilluns - Divendres: 08:00 - 22:00<br>Dissabte: 09:00 - 20:00<br>Diumenge: 09:00 - 14:00</p>
+        </div>
+        <img src="imatges/tarragona.jpg" alt="Pista Tarragona" class="img-fluid rounded shadow" style="max-width: 300px;">
+      </div>
+
+      <div class="pista d-flex align-items-center mb-4">
+        <div class="text me-3">
+          <h2>Pista d'Atletisme de Reus</h2>
+          <p><strong>Ubicació:</strong> C/ del Vent, 45, Reus</p>
+          <p><strong>Horari:</strong><br>Dilluns - Divendres: 07:30 - 21:30<br>Dissabte: 08:00 - 19:00<br>Diumenge: Tancat</p>
+        </div>
+        <img src="imatges/reus.jpg" alt="Pista Reus" class="img-fluid rounded shadow" style="max-width: 300px;">
+      </div>
+
+      <div class="pista d-flex align-items-center mb-4">
+        <div class="text me-3">
+          <h2>Pista d'Atletisme de Cambrils</h2>
+          <p><strong>Ubicació:</strong> Passeig Marítim, s/n, Cambrils</p>
+          <p><strong>Horari:</strong><br>Dilluns - Divendres: 08:00 - 22:00<br>Dissabte: 08:30 - 20:30<br>Diumenge: 09:00 - 14:00</p>
+        </div>
+        <img src="imatges/cambrils.jpg" alt="Pista Cambrils" class="img-fluid rounded shadow" style="max-width: 300px;">
+      </div>
+
+      <div class="pista d-flex align-items-center mb-4">
+        <div class="text me-3">
+          <h2>Pista d'Atletisme del Vendrell</h2>
+          <p><strong>Ubicació:</strong> Carrer de l'Esport, 7, El Vendrell</p>
+          <p><strong>Horari:</strong><br>Dilluns - Divendres: 07:00 - 21:00<br>Dissabte: 08:00 - 18:00<br>Diumenge: 08:00 - 13:00</p>
+        </div>
+        <img src="imatges/vendrell.jpg" alt="Pista Vendrell" class="img-fluid rounded shadow" style="max-width: 300px;">
+      </div>
+
+      <div class="pista d-flex align-items-center mb-4">
+        <div class="text me-3">
+          <h2>Pista d'Atletisme de Valls</h2>
+          <p><strong>Ubicació:</strong> Ronda de la Coma, 20, Valls</p>
+          <p><strong>Horari:</strong><br>Dilluns - Divendres: 08:00 - 21:00<br>Dissabte: 09:00 - 19:00<br>Diumenge: 09:00 - 14:00</p>
+        </div>
+        <img src="imatges/valls.jpg" alt="Pista Valls" class="img-fluid rounded shadow" style="max-width: 300px;">
+      </div>
+    </main>
+  </div>
+
+  <!-- Botó per pujar a dalt -->
+  <button onclick="scrollToTop()" class="back-to-top">&uarr;</button>
+
+  <!-- Peu de pàgina -->
+  <footer class="bg-danger text-white text-center py-3 mt-4">
+    <p class="mb-0">&copy; 2025 Pistes - Totes les pistes d'atletisme del Camp de Tarragona</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     function toggleMenu() {
-        const menu = document.getElementById("dropdown-menu");
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "block";
-        }
+      const menu = document.getElementById("dropdown-menu");
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
     }
 
     window.addEventListener("click", function(e) {
-        const toggle = document.querySelector(".menu-toggle");
-        const menu = document.getElementById("dropdown-menu");
-
-        if (!toggle.contains(e.target) && !menu.contains(e.target)) {
-            menu.style.display = "none";
-        }
+      const toggle = document.querySelector(".menu-toggle");
+      const menu = document.getElementById("dropdown-menu");
+      if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+        menu.style.display = "none";
+      }
     });
-    </script>
-
+  </script>
 </body>
 </html>
+
 
 
 
