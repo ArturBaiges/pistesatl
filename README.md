@@ -100,7 +100,7 @@ Cada pista es representa amb una icona clicable que mostra:
   - Els equipaments disponibles.
   - Un enllaç a la Federació Catalana d’Atletisme.
   - Un histograma d’afluència en format `.svg`.
--  El mapa ha estat integrat dins la web amb un `iframe` i és completament **navegable i interactiu**.
+-  El mapa ha estat integrat dins la web amb un `iframe` i és completament navegable i interactiu.
 -  El mapa manté la seva funcionalitat i adaptabilitat en qualsevol dispositiu.
 
 ##  Dificultats i possibles millores
