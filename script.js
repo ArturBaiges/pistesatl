@@ -27,3 +27,4 @@ function tancarModal() {
     document.getElementById('modal').style.display = "none";
 }
 
+
