@@ -20,9 +20,9 @@ Conèixer **els equipaments disponibles** és fonamental per preparar una compet
 Al Camp de Tarragona, l’atletisme sovint ha quedat **a l’ombra** d'altres esports més populars com el futbol o el bàsquet.  
 Aquesta web també pretén:
 
--  **Donar visibilitat** a l’atletisme.
--  **Difondre** la seva riquesa i diversitat de disciplines.
--  **Fomentar** una major pràctica esportiva.
+-  Donar visibilitat a l’atletisme.
+-  Difondre la seva riquesa i diversitat de disciplines.
+-  Fomentar una major pràctica esportiva.
 
 ##  Dades i continguts
 
@@ -73,12 +73,12 @@ Un objectiu tècnic ha estat que la web fos completament accessible des de quals
 -  **Framework Bootstrap**: s’ha integrat aquest framework per aprofitar el seu sistema de grilles (`grid system`) i les seves classes responsive. Concretament:
   - S’han fet servir `container`, `row`, `col-md-*` per distribuir el contingut en columnes que s’ajusten segons la mida del dispositiu.
   - Les imatges tenen `class="img-fluid"` per adaptar-se automàticament a l’amplada del contenidor.
-  - S’han emprat components com **botons**, **menús** i **targetes** amb classes que ja inclouen comportament responsive per defecte (`p-*`, `m-*`, `d-*`).
+  - S’han emprat components com botons, menús i targetes amb classes que ja inclouen comportament responsive per defecte (`p-*`, `m-*`, `d-*`).
   - A més, Bootstrap ha permès mantenir una estètica uniforme, amb marges i tipografies coherents en qualsevol pantalla.
 
 -  **Imatges flexibles** amb `max-width: 100%` i `height: auto` per garantir que mai desbordin el seu contenidor i es vegin bé tant en mòbils com en escriptoris.
 
--  Menú i elements adaptats per a la navegació tàctil: el menú principal es converteix en un **menú hamburguesa** funcional quan la pantalla és petita. Està programat amb JavaScript i manté l’accessibilitat tàctil.
+-  Menú i elements adaptats per a la navegació tàctil: el menú principal es converteix en un menú hamburguesa funcional quan la pantalla és petita. Està programat amb JavaScript i manté l’accessibilitat tàctil.
 
 -  Estructuració clara entre contingut (`HTML`) i estils (`CSS`) per facilitar l'escalabilitat i adaptar el disseny amb agilitat en funció dels dispositius.
 
@@ -93,8 +93,8 @@ Un objectiu tècnic ha estat que la web fos completament accessible des de quals
 
 Per representar la localització de les pistes d'atletisme:
 
--  Inicialment s’utilitzava **Google Maps Embed**, però posteriorment s’ha substituït per un **mapa interactiu creat amb QGIS** i exportat amb el complement `qgis2web`.
--  Cada pista es representa amb una icona clicable que mostra:
+-  Inicialment s’utilitzava Google Maps Embed, però posteriorment s’ha substituït per un mapa interactiu creat amb QGIS i exportat amb el complement `qgis2web`.
+Cada pista es representa amb una icona clicable que mostra:
   - El nom de la pista.
   - Els horaris d’obertura.
   - Els equipaments disponibles.
@@ -117,8 +117,8 @@ Durant el desenvolupament de la web s’han trobat diverses dificultats que han 
 
 ###  Possibilitats de millora
 
--  Afegir un **filtre de cerca** per localitzar ràpidament pistes o equipaments.
--  **Expandir** la base de dades amb més municipis i pistes.
--  Enriquir la web amb **efectes visuals** com animacions o transicions suaus.
--  Incorporar **millores d'accessibilitat** per a tots els públics.
+-  Afegir un filtre de cerca per localitzar ràpidament pistes o equipaments.
+-  Expandir la base de dades amb més municipis i pistes.
+-  Enriquir la web amb efectes visuals com animacions o transicions suaus.
+-  Incorporar millores d'accessibilitat per a tots els públics.
 
