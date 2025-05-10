@@ -7,7 +7,7 @@ La web proporciona un **anàlisi de totes les pistes d’atletisme** que es pode
 
 He escollit aquesta temàtica perquè l’**atletisme ha estat una part fonamental** de la meva vida.  
 Durant molts anys vaig ser **atleta del Club Natació Reus Ploms**, i actualment sóc **entrenador d’atletisme**.  
-Crear aquesta web representa un **homenatge** a tot el que aquest esport m’ha aportat.
+Crear aquesta web representa un **"homenatge"** a tot el que aquest esport m’ha aportat.
 
 **Objectiu principal de la plataforma:**  
 
@@ -21,17 +21,17 @@ Al Camp de Tarragona, l’atletisme sovint ha quedat **a l’ombra** d'altres es
 Aquesta web també pretén:
 
 -  Donar visibilitat a l’atletisme.
--  Difondre la seva riquesa i diversitat de disciplines.
--  Fomentar una major pràctica esportiva.
+-  Mostrar la seva diversitat de disciplines.
+-  Que més gent s'animi a practicar aquest esport.
 
 ##  Dades i continguts
 
 Per a l’elaboració de la web, s’han utilitzat dades de diverses fonts:
 
-###  Fotografies i informació:
+###  Fotografies i informació
 
 - Les fotografies són de les pàgines oficials de cada pista del Camp de Tarragona i d'altres estan creades amb IA.
-- La informació sobre cada pista, en alguns casos, ha estat extreta de fonts oficials, i en altres ha estat creada expressament per completar el contingut.
+- La informació sobre cada pista, en alguns casos, ha estat extreta de fonts oficials, i en altres ha estat creada per completar el contingut.
 
 ##  Estructura i presentació de la web
 
@@ -42,7 +42,7 @@ La web està organitzada en diverses pestanyes, accessibles a través del menú 
 - **Inici**: Breu presentació de la web i de la seva motivació.
 - **Informació**: Informació sobre la ubicació i horaris de cada pista d’atletisme.
 - **Equipaments**: Secció interactiva que permet consultar quins equipaments té cada pista.
-- **Mapa**: Integració d'un mapa interactiu amb la localització exacta de les instal·lacions.
+- **Mapa**: Integració d'un mapa interactiu amb la localització exacta de les instal·lacions i dades sobre cada una d'elles.
 - **Contacte**: Formulari per rebre comentaris, dubtes o suggeriments.
 
 ###  Decisions de disseny i presentació
@@ -50,12 +50,11 @@ La web està organitzada en diverses pestanyes, accessibles a través del menú 
 -  **Organització visual clara** amb encapçalaments i separació de continguts per facilitar la lectura.
 -  **Separació entre estructura i estil**: l'HTML i el CSS es mantenen ben diferenciats.
 -  **Botó de “pujar amunt”** per millorar la navegació.
--  **Uniformitat cromàtica** i estilística a tota la web.
 -  S’ha aplicat el framework **Bootstrap** per millorar el disseny visual, facilitar la responsivitat i implementar components ja formats, com el sistema de columnes, galeries i botons.
 
 ###  Representació visual
 
--  Galeries d’imatges per enriquir la descripció de les pistes.
+-  Galeries d’imatges per complementar la descripció de les pistes.
 -  Presentació clara dels horaris i serveis de cada instal·lació.
 -  Mapa interactiu per ubicar fàcilment les pistes al territori.
 
@@ -78,7 +77,7 @@ Un objectiu tècnic ha estat que la web fos completament accessible des de quals
 
 -  **Imatges flexibles** amb `max-width: 100%` i `height: auto` per garantir que mai desbordin el seu contenidor i es vegin bé tant en mòbils com en escriptoris.
 
--  Menú i elements adaptats per a la navegació tàctil: el menú principal es converteix en un menú hamburguesa funcional quan la pantalla és petita. Està programat amb JavaScript i manté l’accessibilitat tàctil.
+-  Menú i elements adaptats per a la navegació: el menú principal es converteix en un menú hamburguesa funcional quan la pantalla és petita. Està programat amb JavaScript i manté l’accessibilitat tàctil.
 
 -  Estructuració clara entre contingut (`HTML`) i estils (`CSS`) per facilitar l'escalabilitat i adaptar el disseny amb agilitat en funció dels dispositius.
 
@@ -99,7 +98,6 @@ Cada pista es representa amb una icona clicable que mostra:
   - Els horaris d’obertura.
   - Els equipaments disponibles.
   - Un enllaç a la Federació Catalana d’Atletisme.
-  - Un histograma d’afluència en format `.svg`.
 -  El mapa ha estat integrat dins la web amb un `iframe` i és completament navegable i interactiu.
 -  El mapa manté la seva funcionalitat i adaptabilitat en qualsevol dispositiu.
 
